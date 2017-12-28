@@ -9,6 +9,9 @@
       <geometry>
         <box size="0.5 0.5 0.25"/>
       </geometry>
+      <material name="blue">
+        <color rgba="0 0.5 1 1"/>
+      </material>
     </visual>
     <!-- Caster -->
     <visual name="caster">
@@ -26,6 +29,9 @@
       <geometry>
         <cylinder length="0.1" radius="0.2" />
       </geometry>
+      <material name="black">
+        <color rgba="0.05 0.05 0.05 1"/>
+      </material>
     </visual>
   </link>
   <joint name="joint_right_wheel" type="continuous">
@@ -42,6 +48,7 @@
       <geometry>
         <cylinder length="0.1" radius="0.2" />
       </geometry>
+      <material name="black"/>
     </visual>
   </link>
   <joint name="joint_left_wheel" type="continuous">
